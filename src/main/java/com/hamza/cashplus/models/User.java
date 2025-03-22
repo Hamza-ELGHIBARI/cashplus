@@ -3,14 +3,27 @@ package com.hamza.cashplus.models;
 import java.util.Date;
 
 public class User {
+    private int id;
     private String fullName;
     private String email;
     private Date birthDate;
     private String password;
     private String validationToken;
     private boolean validated;
+    
 
-    // Getters and Setters
+    public User(int id, String fullName, String email, String password, Date birthDate) {
+        this.id = id;
+        this.fullName = fullName;
+        this.email = email;
+        this.password = password;
+        this.birthDate = birthDate;
+    }
+
+    public User() {
+	}
+
+	// Getters and Setters
     public String getFullName() {
         return fullName;
     }
