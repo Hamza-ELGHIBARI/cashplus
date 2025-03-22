@@ -7,7 +7,7 @@ import java.util.Properties;
 public class EmailSender {
 
     public static void sendEmail(String to, String subject, String body) {
-        String from = "your-email@example.com";  // Changez ceci par votre email
+        String from = "youssef.nadia.odoo@gmail.com";  
         String host = "smtp.example.com";  // Changez ceci par le serveur SMTP que vous utilisez
 
         Properties properties = System.getProperties();
